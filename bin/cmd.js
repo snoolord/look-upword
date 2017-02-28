@@ -1,4 +1,4 @@
-const lookUpword = require('../')
+const lookUpword = require('../look-upword')
 const minimist = require('minimist')
 
 const argv = minimist(process.argv.slice(2), {
