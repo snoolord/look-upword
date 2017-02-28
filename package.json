@@ -2,13 +2,9 @@
   "name": "look-upword",
   "version": "1.0.0",
   "description": "converts Thesaurus results from Webster API from XML to JSON.",
-  "author": {
-      "name": "Winston Zhao",
-      "email": "winston.j.zhao@gmail.com",
-      "url": "http://winstonzhao.com"
-  },
+  "author": "",
   "bin": {
-      "look-upword": "./bin/cmd.js"
+    "look-upword": "./bin/cmd.js"
   },
   "homepage": "https://github.com/winstonjz/look-upword",
   "keywords": [
@@ -26,11 +22,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winstonjz/look-upword.git"
+  },
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.5",
     "axios": "^0.15.3",
+    "minimist": "^1.2.0",
     "xml2js": "^0.4.17"
   }
 }

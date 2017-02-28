@@ -1,6 +1,7 @@
 var axios = require('axios')
 var parseString = require('xml2js').parseString;
 var util = require('./util/util');
+
 module.exports = {
     lookUpword
 }
