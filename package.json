@@ -30,6 +30,7 @@
   "dependencies": {
     "async": "^2.1.5",
     "axios": "^0.15.3",
+    "connectivity": "^1.0.0",
     "minimist": "^1.2.0",
     "xml2js": "^0.4.17"
   }
