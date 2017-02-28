@@ -7,7 +7,21 @@
       "email": "winston.j.zhao@gmail.com",
       "url": "http://winstonzhao.com"
   },
-  "bin": "./bin/cmd.js",
+  "bin": {
+      "look-upword": "./bin/cmd.js"
+  },
+  "homepage": "https://github.com/winstonjz/look-upword",
+  "keywords": [
+    "synonyms",
+    "thesaurus",
+    "xml",
+    "json",
+    "parts",
+    "of",
+    "speech",
+    "dictionary",
+    "api"
+  ],
   "main": "look-upword.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
