@@ -24,3 +24,21 @@ exports.convertXMLResultsToWords = function(word, result) {
     return wordsWithFieldsParsed;
 
 }
+var returnArrayOfStrings = function(definitions) {
+    if (!definitions) {
+        return [''];
+    }
+    var resultDefinitions = [];
+    for (let i = 0; i < definitions.length; i++) {
+        if (typeof definitions[i] === 'string') {
+            if (definitions[i]) {
+                resultDefinitions.push(definitions[i]);
+            }
+        } else {
+            if (definitions[i]["_"]) {
+                resultDefinitions.push(definitions[i]["_"]);
+            }
+        }
+    }
+    return resultDefinitions
+}

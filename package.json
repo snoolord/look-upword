@@ -3,9 +3,6 @@
   "version": "1.0.3",
   "description": "converts Thesaurus results from Webster API from XML to JSON.",
   "author": "",
-  "bin": {
-    "look-upword": "./bin/cmd.js"
-  },
   "homepage": "https://github.com/winstonjz/look-upword",
   "keywords": [
     "synonyms",
@@ -33,5 +30,8 @@
     "connectivity": "^1.0.0",
     "minimist": "^1.2.0",
     "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3"
   }
 }
