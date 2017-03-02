@@ -3,10 +3,14 @@
 Converts XML data from Webster API into JSON. Words are separated by part of speech and definition.
 
 # Install
-> npm install --save look-upword
+```
+npm install --save look-upword
+```
 
 # Getting Started
-> lookUpword(apiKey, queryString, suggestionCallback, wordsCallback, done)
+```
+lookUpword(apiKey, queryString, suggestionCallback, wordsCallback, done)
+```
 
 apiKey: API key from Webster at http://www.dictionaryapi.com/
 
@@ -49,40 +53,51 @@ done (optional): callback function that is called after either wordsCallback or 
 # Trying look-upword
 
 1. Sign up for an API key at http://www.dictionaryapi.com/
+
 2. Create a new directory & npm init & create index.js
-> mkdir look-upword-example
-> cd look-upword-example
-> npm init
-> touch index.js
+
+ ```
+mkdir look-upword-example
+cd look-upword-example
+npm init
+touch index.js
+```
 
 3. Install look-upword
-> npm install --save look-upword
+
+ ```
+npm install --save look-upword
+```
 
 4. Require look-upword in your index file
 
-~~~~
+ ```
 var { lookUpword } = require('look-upword') (ES5)
-
-
 import { lookUpword } from 'look-upword' (ES6)
-~~~~
+```
 
 5. Write a wordsCallback and a suggestionCallback
 
-~~~~
-var wordsCallback = function (res) {
-    console.log(res)
-}
+ ```
+    var wordsCallback = function (res) {
+        console.log(res)
+    }
 
-var suggestionCallback = function (res) {
-    console.log(res)
-}
-~~~~
+    var suggestionCallback = function (res) {
+        console.log(res)
+    }
+```
 
 6. Call the function at the bottom of the file
-> lookUpword('apiKey', 'word-you-want-to-look-up', wordsCallback, suggestionCallback)
+
+ ```
+lookUpword('apiKey', 'word-you-want-to-look-up', wordsCallback, suggestionCallback)
+```
 
 7. Then run the file
-> node index
+
+ ```
+ node index
+```
 
 8. See output in terminal
