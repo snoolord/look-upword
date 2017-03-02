@@ -40,7 +40,9 @@ var lookUpword = function (apiKey, queryString, suggestionCallback, wordsCallbac
                 wordsCallback(res)
             }
         }).then(function (){
-            done();
+            if (done) {
+                done();
+            }
         })
 }
 
