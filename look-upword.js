@@ -9,14 +9,12 @@ var lookUpword = function (apiKey, queryString, suggestionCallback, wordsCallbac
     axios
         .get(baseUrl + queryString + apiKey)
         .then(function(response) {
-            console.log("hello")
             var wordsWithSynonyms;
             // I separated the words by part of speech and formatted it
             parseString(response.data, function(err, result){
                 var parsedJson =
                     JSON.parse(JSON.stringify(result.entry_list));
                 if (parsedJson.suggestion) {
-                    res.status = 404;
                     var formattedSuggestion = {
                         word: queryString,
                         related: parsedJson.suggestion
@@ -49,14 +47,3 @@ var lookUpword = function (apiKey, queryString, suggestionCallback, wordsCallbac
 module.exports = {
     lookUpword
 }
-
-var callbacks = {
-    suggestionCallback: function (res) {
-        console.log(res)
-    },
-    wordsCallback: function (res) {
-        console.log("words")
-    }
-
-}
-lookUpword('?key=0b966b02-dd99-4a31-a735-2206edb9a8a5', 'value', callbacks.suggestionCallback, callbacks.wordsCallback)
