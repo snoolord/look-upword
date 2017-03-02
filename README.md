@@ -14,13 +14,15 @@ queryString: word that is being looked up
 
 suggestionCallback: callback for when there is a typo or the word can't be found. Takes one argument which is the result JSON from Webster in the form of:
 
+```
 {
     word: queryString,
     related: ['related', 'words', 'in', 'an', 'array']
 }
 
+```
 wordsCallback: callback when the word is found. Also takes one argument which is the result JSON from Webster in the for of:
-
+```
 {
     [
         {
@@ -39,7 +41,7 @@ wordsCallback: callback when the word is found. Also takes one argument which is
         },
     ]
 }
-
+```
 Words can have multiple parts of speech and multiple definitions for the same part of speech! Each definition will be available in the resulting JSON.
 
 done (optional): callback function that is called after either wordsCallback or suggestionCallback is called.  (beware of suggestionCallback or wordsCallback being async)
