@@ -1,6 +1,6 @@
 {
   "name": "look-upword",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "converts Thesaurus results from Webster API from XML to JSON.",
   "author": "",
   "homepage": "https://github.com/winstonjz/look-upword",
