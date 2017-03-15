@@ -46,6 +46,16 @@ var lookUpword = function (apiKey, queryString, suggestionCallback, wordsCallbac
         })
 }
 
+var queryString = 'information';
+var apiKey = '?key=0b966b02-dd99-4a31-a735-2206edb9a8a5' ;
+
+var callbacks = {
+    suggestionCallback: function (res) {
+    },
+    wordsCallback: function (res) {
+    }
+}
+lookUpword(apiKey, queryString, callbacks.suggestionCallback, callbacks.wordsCallback)
 module.exports = {
     lookUpword
 }
